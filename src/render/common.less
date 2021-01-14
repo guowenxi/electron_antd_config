@@ -1,0 +1,131 @@
+@smallPopupHeight: 36px;
+@btnHeight: 36px;
+
+
+// 这个表一般保存用于整体布局的样式表 计划整合于globalStyled.tsx 内
+
+
+
+.text-align-justify{
+  text-align:justify;
+}
+
+.small-popup-btn-box {
+  margin-top: 4.44vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .small-pop-border-btn {
+    background-color: #ffffff;
+    border: solid 0.09vh #1572e8;
+    color: #1572e8;
+  }
+
+  .small-pop-bg-btn {
+    background-color: #1572e8;
+    border: solid 0.09vh #1572e8;
+    color: #fff;
+  }
+
+  .small-pop {
+    // height: @smallPopupHeight;
+    padding: 0 2.78vh;
+    border-radius: 0.37vh;
+    font-size: 1.48vh;
+    margin-left: 2.6vw;
+    cursor: pointer;
+    line-height: @smallPopupHeight;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+
+
+.right-main-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 97%;
+  height: 97%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+
+  .left-box {
+    width: 65%;
+  }
+
+  .right-box {
+    width: 30%;
+    display: flex;
+
+    .ant-spin-container {
+      display: flex;
+      flex: 1;
+    }
+  }
+
+  .top-box{
+    min-height:4vh;
+    position: relative;
+    margin: 1.85vh 1.04vw 2.04vh;
+    display: flex;
+    justify-content: space-between;
+    .headerSearch {
+      flex: 1;
+    }
+    .dete-picker {
+      right: 0;
+      top: 0;
+      width: 10vw;
+      position: absolute;
+    }
+    .table-btn-box{
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0;
+      margin: 0;
+      .table-bg-bt{
+        background-color: #1572e8;
+        color: #fff;
+        border: solid 0.09vh #1572e8;
+      }
+      .table-btn{
+        padding: 0 0.99vw;
+        height: @btnHeight;
+        border-radius: 0.37vh;
+        font-size: 1.48vh;
+        cursor: pointer;
+        line-height: @btnHeight;
+        white-space: nowrap;
+      }
+      .table-border-btn{
+        color: #1572e8;
+        border: 1px solid #1572e8;
+      }
+    }
+  }
+
+  .bottom-box {
+    display: flex;
+    flex-flow: column;
+    padding: 0 1.04vw;
+    .table-full-box{
+      width: 100%;
+    }
+    .pagination-box {
+      padding: 1vh 0;
+
+      .Pagination {
+        float: right;
+      }
+    }
+
+
+  }
+}

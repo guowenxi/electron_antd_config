@@ -1,0 +1,77 @@
+@import "../../common.less";
+
+.content-box{
+position: relative;
+left:0;
+width: 100%;
+  .top-btn-box{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+
+  }
+  .search-box{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    margin-top: 1vh;
+  }
+  .search-item{
+    display: flex;
+    width: 25%;
+    margin-bottom: 1vh;
+    height: 30px;
+    line-height: 30px;
+  }
+  .title{
+    .text-align-justify();
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 5vw;
+    &:after{
+      content: "";
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  .right-side-box{
+    flex: 1;
+    margin-right: 2vw;
+    .select-box{
+      width: 100%;
+    }
+    .range-picker{
+      width: 100% !important;
+    }
+  }
+  .number-interval{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .input-number-item{
+      width: 45% !important;
+    }
+
+  }
+  .btn{
+    float:right;
+    padding: 0 1vw;
+    margin-right: 10px;
+    cursor: pointer;
+    height: 32px;
+  }
+  .btn-box{
+    display: flex;
+    justify-content: center;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.more-search-box{
+  width: 100%;
+  position: relative;
+}
